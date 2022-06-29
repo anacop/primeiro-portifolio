@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <title>Ana Clara</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a target="_blank" href="http://www.github.com/anacop/">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="http://www.linkedin.com/in/anaclaraop/">Linkedin</a> 
+            </li>
+            <li>
+                <a target="_blank" href="http://www.instagram.com/a.naclar">Instagram</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+
+            <div class="name">
+                <h1>Ana Clara</h1>
+                <h5>Full Stack Developer Student</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Olá! Tenho 26 anos e atualmente sou estudante de Engenharia Ambiental, em processo de migração de curso para Engenharia de Software. Desde o início de 2020 venho me interessando por programação, porém somente agora eu realmente resolvi encarar o desafio de estudar mais a fundo sobre o que o mundo da tecnologia pode oferecer para minha vida profissional. Foi então que iniciei os estudos sobre HTML, CSS e Javascript. Hoje, meu foco principal é me desenvolver nestas tecnologias, para que assim eu esteja apta à minha primeira oportunidade profissional.
+                </p>
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <h6>Entre em contato comigo!</h6>
+                    <input type="text" placeholder="Seu e-mail :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+            <div>
+                <img src="./logo-1.png" alt="Ana Clara" width="300" height="300">
+            </div>
+
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
